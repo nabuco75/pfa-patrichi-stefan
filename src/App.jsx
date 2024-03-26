@@ -1,11 +1,12 @@
-// src/App.js
-
-import LandingPage from "./components/LandingPage";
-
+import ErrorBoundary from "./components/ErrorBoundary";
+import LandingPage from "./components/LandingPage"; // Asigură
+import "./index.css";
 function App() {
   return (
     <div>
-      <LandingPage />
+      <ErrorBoundary>
+        <LandingPage />
+      </ErrorBoundary>
     </div>
   );
 }
